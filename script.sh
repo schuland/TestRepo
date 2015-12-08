@@ -19,7 +19,7 @@ if test "$?" != "0"; then
 fi
 
 echo "Fetching and pulling updates for development"
-git fetch && git pull
+git fetch && git pull origin development
 if test "$?" != "0"; then
 	echo "Error while fetching or pulling updates for development branch"
 	exit 1
